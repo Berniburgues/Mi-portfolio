@@ -495,6 +495,9 @@ body.light__theme .contact .contact__container i {
   .nav__toggle {
     display: none;
   }
+  body.light__theme .theme__toggle i {
+    color: var(--color_primario);
+  }
   .nav__bar {
     border-bottom: 1px solid transparent;
     background-image: linear-gradient(
