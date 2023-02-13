@@ -54,6 +54,9 @@ body.light__theme .contact .contact__container i {
 /** MOBILE **/
 @media (min-width: 320px) {
   /* NAV */
+  body.light__theme .theme__toggle i {
+    color: var(--color_secundario);
+  }
   .nav__bar {
     display: flex;
     justify-content: flex-end;
