@@ -51,6 +51,9 @@ body.light__theme .skills .skill__container .skill i {
 body.light__theme .contact .contact__container i {
   color: var(--color_primario);
 }
+body.light__theme .experience .exp__container .exp__details h2 {
+  color: var(--color_secundario);
+}
 /** MOBILE **/
 @media (min-width: 320px) {
   /* NAV */
