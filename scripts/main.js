@@ -12,3 +12,10 @@ navLinks.forEach(link => {
         navMenu.classList.remove("nav__menu__visible");
     });
 });
+
+const themeToggle = document.querySelector('.theme__toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', function() {
+  body.classList.toggle('light__theme');
+});
