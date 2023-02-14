@@ -567,11 +567,10 @@ body.light__theme .experience .exp__container .exp__details h2 {
   }
   /* SKILLS */
   .skill__container {
-    flex-direction: column;
+    flex-direction: row;
   }
   .skill {
-    flex-basis: 80%;
-    max-width: 400px;
+    gap: 1px;
   }
   /* PORTFOLIO */
   .port__container {
