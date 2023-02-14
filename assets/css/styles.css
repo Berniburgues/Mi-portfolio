@@ -39,6 +39,9 @@ body.light__theme .first__header__container h2 {
 body.light__theme nav li a {
   color: var(--color_secundario);
 }
+body.light__theme nav li a:hover {
+  color: var(--gris);
+}
 body.light__theme .exp__title {
   color: var(--color_secundario);
 }
