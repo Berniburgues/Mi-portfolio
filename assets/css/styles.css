@@ -368,6 +368,11 @@ body.light__theme .experience .exp__container .exp__details h2 {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .port__container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
   .ejemplo1,
   .ejemplo2,
   .ejemplo3,
