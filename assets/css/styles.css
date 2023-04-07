@@ -42,20 +42,29 @@ body.light__theme nav li a {
 body.light__theme nav li a:hover {
   color: var(--gris);
 }
-body.light__theme .exp__title {
+body.light__theme .skills .skill__container .skill i {
   color: var(--color_secundario);
+}
+body.light__theme .skills .skill__container .skill p {
+  color: var(--color_secundario);
+}
+body.light__theme .skills h2 {
+  color: var(--color_secundario)
 }
 body.light__theme .port__title {
-  color: var(--color_secundario);
-}
-body.light__theme .skills .skill__container .skill i {
   color: var(--color_primario);
+}
+body.light__theme .port__container h2 {
+  color: var(--color_primario)
+}
+body.light__theme .port__container i {
+  color: var(--color_primario)
 }
 body.light__theme .contact .contact__container i {
-  color: var(--color_primario);
-}
-body.light__theme .experience .exp__container .exp__details h2 {
   color: var(--color_secundario);
+}
+body.light__theme .contact h2 {
+  color: var(--color_secundario)
 }
 /** MOBILE **/
 @media (min-width: 320px) {
@@ -180,7 +189,7 @@ body.light__theme .experience .exp__container .exp__details h2 {
     gap: 25px;
   }
   .icon__shape {
-    font-size: 25px;
+    font-size: 35px;
   }
   .icon__shape a {
     color: var(--color_secundario);
@@ -238,72 +247,6 @@ body.light__theme .experience .exp__container .exp__details h2 {
     font-size: 15px;
     color: var(--gris);
   }
-  /* EXPERIENCE */
-  .experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-    background-color: var(--color_primario);
-  }
-  .exp__title {
-    color: var(--blanco);
-    font-size: 40px;
-    margin-bottom: 30px;
-    font-style: italic;
-    text-shadow: 1px 1px 1px var(--color_secundario);
-  }
-  .exp__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  .exp__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0;
-    flex-basis: 350px;
-    gap: 50px;
-  }
-  .exp__icon {
-    color: var(--color_secundario);
-    font-size: 50px;
-    margin-right: 30px;
-  }
-  .exp__details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-  .exp__details h2 {
-    color: var(--blanco);
-    font-size: 24px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .exp__details p {
-    font-size: 15px;
-    color: var(--gris);
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .exp__years {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .exp__years h2 {
-    text-align: center;
-    font-size: 20px;
-    color: var(--blanco);
-  }
   /* SKILLS */
   .skills {
     display: flex;
@@ -311,7 +254,7 @@ body.light__theme .experience .exp__container .exp__details h2 {
     align-items: center;
     text-align: center;
     padding: 50px 0;
-    background-color: var(--color_terciario);
+    background-color: var(--color_primario);
   }
   .skills__title {
     color: var(--blanco);
@@ -352,15 +295,26 @@ body.light__theme .experience .exp__container .exp__details h2 {
   .port {
     padding: 40px 0;
     text-align: center;
-    background-color: var(--color_primario);
+    background-color: var(--color_terciario);
   }
   .port__title {
     color: var(--blanco);
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-style: italic;
     text-shadow: 1px 1px 1px var(--color_secundario);
-  }
+
+    }
+  .ejemplo__tech h2 {
+    color: var(--color_secundario);
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    }
+  .ejemplo__tech p {
+    color: var(--blanco);
+    margin-bottom: 20px;
+    }
   .port__container {
     display: flex;
     flex-direction: column;
@@ -369,9 +323,10 @@ body.light__theme .experience .exp__container .exp__details h2 {
     justify-content: center;
   }
   .port__container img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
   }
   .ejemplo1,
   .ejemplo2,
@@ -383,8 +338,6 @@ body.light__theme .experience .exp__container .exp__details h2 {
   .ejemplo2 img,
   .ejemplo3 img,
   .ejemplo4 img {
-    width: 100%;
-    height: 15%;
     border-radius: 15px;
     box-shadow: 0px -3px 0px 3px var(--color_secundario);
   }
@@ -400,7 +353,7 @@ body.light__theme .experience .exp__container .exp__details h2 {
   /* CONTACT */
   .contact {
     padding: 20px;
-    background-color: var(--color_terciario);
+    background-color: var(--color_primario);
   }
   .contact__title {
     color: var(--blanco);
@@ -447,7 +400,7 @@ body.light__theme .experience .exp__container .exp__details h2 {
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: var(--color_primario);
+    background-color: var(--color_terciario);
     color: var(--gris);
   }
   .footer__container {
@@ -468,10 +421,11 @@ body.light__theme .experience .exp__container .exp__details h2 {
     transition: transform 0.7s ease-out, box-shadow 0.2s ease-out;
     border-radius: 50%;
     background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .icon:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 7px var(--blanco);
+    transform: scale(0.8);
   }
 }
 /* ======== MEDIA QUERIES ========= */
@@ -492,12 +446,9 @@ body.light__theme .experience .exp__container .exp__details h2 {
     width: 300px;
     border-radius: 50px;
   }
-  .exp__container {
-    flex-direction: column;
-  }
-  .exp__item {
-    flex-basis: 100%;
-    max-width: 400px;
+  .port__container img {
+    width: 700px;
+    height: 400px;
   }
 }
 /* =============== MEDIA QUERIES ============ */
@@ -566,6 +517,7 @@ body.light__theme .experience .exp__container .exp__details h2 {
   .second__header__container img {
     width: 350px;
     margin-right: 25px;
+    border-radius: 200px;
   }
   /* ABOUT */
   .logos__container {
@@ -586,6 +538,11 @@ body.light__theme .experience .exp__container .exp__details h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .port__container img {
+  width: 650px;
+  height: 450px;
+  object-fit: cover;
   }
   .ejemplo {
     max-width: 45%;
