@@ -193,6 +193,7 @@ body.light__theme .contact h2 {
   }
   .icon__shape a {
     color: var(--color_secundario);
+    text-decoration: none;
   }
   .second__header__container img {
     width: 250px;
@@ -370,34 +371,59 @@ body.light__theme .contact h2 {
   }
   .contact__container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
   }
   .phone,
-  .mail {
-    width: 45%;
+  .mail,
+  .form {
+    width: 30%;
     text-align: center;
   }
   .phone i,
   .mail i {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 40px;
     color: var(--color_secundario);
   }
   .phone h3,
-  .mail h3 {
+  .mail h3,
+  .form h3 {
     color: var(--blanco);
     font-size: 20px;
     margin-bottom: 5px;
   }
   .phone p,
-  .mail p {
+  .mail p,
+  .form label {
     font-size: 15px;
     color: var(--gris);
     margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    width: 100%;
+  }
+  .form input,
+  .form textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .form button {
+    background-color: var(--color_secundario);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .form button:hover {
+    background-color: var(--color_terciario);
   }
   /* FOOTER */
   .footer {

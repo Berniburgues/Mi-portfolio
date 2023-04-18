@@ -69,10 +69,15 @@
           <div class="icon__shape">
             <a href="https://github.com/Berniburgues/"><i class="fa-brands fa-github icon"></i></a>
           </div>
+          <div class="icon__shape">
+            <a href="https://drive.google.com/file/d/17JTlvWCqI_iDO9p4dsQX93fMqoBh1QgV/view?usp=download" download target="_blank">
+              <i class="fa-solid fa-file-download icon"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="second__header__container">
-        <img src="./assets/Logos-Imágenes/mi-foto.jpg" alt="" />
+        <img src="./assets/Logos-Imágenes/mi-foto.jpg" alt="Bernardo Burgués" />
       </div>
     </header>
     <main class="main">
@@ -218,22 +223,32 @@
             <a href="https://bern-pokedex-app.netlify.app/" target="_blank"><i class="fa-solid fa-link icon"></i></a>
           </div>
         </div>
-      </section>
-      <section id="contact__section" class="contact">
-        <h2 class="contact__title">Contacto</h2>
-        <div class="contact__container">
-          <div class="phone">
-            <i class="fa-solid fa-phone"></i>
-            <h3>Celular</h3>
-            <p>+54-236-4538935</p>
-          </div>
-          <div class="mail">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>Email</h3>
-            <p>burguesbernardo@gmail.com</p>
-          </div>
+    <section id="contact__section" class="contact">
+      <h2 class="contact__title">Contacto</h2>
+      <div class="contact__container">
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Celular</h3>
+          <p>+54-236-4538935</p>
         </div>
-      </section>
+        <form class="form" action="https://formspree.io/f/mrgvrzkk" method="POST">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>burguesbernardo@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+
     </main>
     <footer class="footer">
       <div class="footer__container">
