@@ -328,6 +328,9 @@ body.light__theme .contact h2 {
     width: 100%;
     object-fit: cover;
   }
+  .port__container img:hover {
+    opacity: 80%;
+  }
   .ejemplo1,
   .ejemplo2,
   .ejemplo3,
@@ -386,6 +389,7 @@ body.light__theme .contact h2 {
   .mail i {
     font-size: 40px;
     color: var(--color_secundario);
+    margin-bottom: 15px;
   }
   .phone h3,
   .mail h3,
